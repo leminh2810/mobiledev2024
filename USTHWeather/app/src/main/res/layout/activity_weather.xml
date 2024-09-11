@@ -1,6 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- activity_weather.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- WeatherFragment at the top -->
+    <fragment
+        android:id="@+id/weather_fragment"
+        android:name="com.example.app.WeatherFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- ForecastFragment below WeatherFragment -->
+    <fragment
+        android:id="@+id/forecast_fragment"
+        android:name="com.example.app.ForecastFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
