@@ -13,8 +13,14 @@ public class WeatherActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_weather);
+        ViewPager2 viewPager = findViewById(R.id.viewPager);
+        WeatherPagerAdapter adapter = new WeatherPagerAdapter(this);
+        viewPager.setAdapter(adapter);
         }
+
     }
+
+
 
 
 
